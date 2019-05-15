@@ -1,0 +1,80 @@
+
+.password-content{
+    width: 360px;
+    margin: auto;
+    margin-top: 10%;
+	text-align:center;
+
+}
+.password-title{
+    margin: 50px;
+	color:red;
+}
+
+.layui-nav-child{
+background-color: #f3faf8;
+}
+
+.aa{
+    height: 1000px;
+    width: 200px;
+    float: left;
+    background: #009688;
+}
+.nav{
+    background: #f3faf8;
+    width: 200px;
+    min-height:800px;
+    float: left;
+}
+.student{
+    width: 1000px;
+    margin: auto;
+    height: 800px;
+}
+.news{
+    height: 300px;
+    float: left;
+    width: 800px;
+}
+.news span{
+    float: right;
+}
+.news-content{
+    margin-left: 40px;
+}
+.course{
+    float: left;
+    width: 220px;
+    margin: 20px;
+    background-color: #f3faf8;
+}
+.course-holder{
+    width: 800px;
+    float: left;
+    min-height: 550px;
+}
+.footer{
+    margin: auto;
+    width: 1000px;
+    height: 30px;
+    background: #f3faf8;
+}
+
+.teacher_header{
+    font-size: 16px;
+    width: 1000px;
+    height: 20px;
+    margin: auto;
+}
+
+.score_table{
+    height: 400px;
+    float: left;
+    width: 780px;
+    padding-left: 20px;
+}
+
+site-demo-button{
+margin-left:0px;
+}

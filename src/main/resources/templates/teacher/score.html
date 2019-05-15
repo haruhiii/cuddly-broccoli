@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>成绩总览</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="/res/layui/css/layui.css"  media="all">
+  <link rel="stylesheet" href="/res/layui/css/style.css"  media="all">
+  <script src="/res/js/jquery-1.11.3.min.js"></script>
+  <script src="/res/js/layer.js"></script>
+  <script src="/res/layui/layui.js"></script>
+</head>
+<body >
+  
+  <!--页眉-->
+<div class="teacher">
+  <div class="teacher_header" style="padding-left:260px">
+      <div class = "header">
+          <img class="header-img" src="/res/images/cuitlog.jpg"/>
+        </div>
+    <div class="layui-col-md3">
+      当前学期：**********
+    </div>
+    <div class="layui-col-md3 layui-col-md-offset1">
+      日期:xxxx年xx月xx日
+    </div>
+    <div class="layui-col-md1 layui-col-md-offset3">
+        <a href="/users/loginout"><button class="layui-btn layui-btn-xs">退出登陆</button></a>
+      
+    </div>
+    <div class="layui-col-md1 ">
+        <a href="/student/toTeacher"><button class="layui-btn layui-btn-xs">返回首页</button></a>
+    </div>
+  </div>
+  <hr class="layui-bg-black">
+</div>
+
+</div>
+
+  <div class="student">
+    <!-- 侧边导航 -->
+    <div class="nav">
+      <div class="info-list">
+        <h1 class="info-title">带老师</h1>
+          <ul class="layui-nav layui-nav-tree layui-bg-green" lay-filter="test">
+            <li class="layui-nav-item layui-nav-itemed ">
+              <a href="javascript:;">课程相关</a>
+              <dl class="layui-nav-child">
+                <dd><a href="">课程设置</a></dd>
+                <dd><a href="">发布公告</a></dd>
+                <dd><a href="">设置助教</a></dd>
+                <dd><a href="">设置作业</a></dd>
+                <dd><a href="">录入成绩</a></dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item">
+              <a href="javascript:;">成绩</a>
+              <dl class="layui-nav-child">
+                <dd><a href="/student/toScore">成绩总览</a></dd>
+                <dd><a href="/student/toPig">母猪的产后护理</a></dd>
+                <dd><a href="/student/toRap">唱跳rap和篮球</a></dd>
+                <dd><a href="">土豆服务器的维护</a></dd>
+              </dl>
+            </li>
+          </ul>
+    </div>    
+    </div>
+
+    <!-- 成绩总览 -->
+    <div class="score_table" style=" float:  left">
+      <table class="layui-table">
+        <colgroup>
+          <col width="150">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>课程名称</th>
+            <th>班级</th>
+            <th>平均分</th>
+            <th>最高分</th>
+            <th>最低分</th>
+            <th>考试人数</th>
+            <th>通过人数</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td>母猪的产后护理</td>
+            <td>1班</td>
+            <td>99</td>
+            <td>100</td>
+            <td>99</td>
+            <td>40</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>母猪的产后护理</td>
+            <td>2班</td>
+            <td>99</td>
+            <td>100</td>
+            <td>99</td>
+            <td>40</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>母猪的产后护理</td>
+            <td>3班</td>
+            <td>99</td>
+            <td>100</td>
+            <td>99</td>
+            <td>40</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>母猪的产后护理</td>
+            <td>4班</td>
+            <td>99</td>
+            <td>100</td>
+            <td>99</td>
+            <td>40</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>唱跳rap和篮球</td>
+            <td>1班</td>
+            <td>0</td>
+            <td>100</td>
+            <td>0</td>
+            <td>40</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>唱跳rap和篮球</td>
+            <td>2班</td>
+            <td>0</td>
+            <td>100</td>
+            <td>0</td>
+            <td>40</td>
+            <td>0</td>
+          </tr><tr>
+            <td>唱跳rap和篮球</td>
+            <td>3班</td>
+            <td>0</td>
+            <td>100</td>
+            <td>0</td>
+            <td>40</td>
+            <td>0</td>
+          </tr><tr>
+            <td>唱跳rap和篮球</td>
+            <td>4班</td>
+            <td>0</td>
+            <td>100</td>
+            <td>0</td>
+            <td>40</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    
+        </div>
+       <!-- 已修课程 -->
+        <div class="layui-tab-item">
+          <div class="layui-card course">
+            <div class="layui-card-header course-status">已结课</div>
+            <div class="layui-card-body">
+              <div class="course-name">概率论与数理统计</div>
+              <div class="course-result">不合格</div>
+            </div>
+          </div>
+          <div class="layui-card course">
+            <div class="layui-card-header course-status">已结课</div>
+            <div class="layui-card-body">
+              <div class="course-name">概率论与数理统计</div>
+              <div class="course-result">不合格</div>
+            </div>
+          </div>
+          <div class="layui-card course">
+            <div class="layui-card-header course-status">已结课</div>
+            <div class="layui-card-body">
+              <div class="course-name">概率论与数理统计</div>
+              <div class="course-result">不合格</div>
+            </div>
+          </div>
+          <div class="layui-card course">
+            <div class="layui-card-header course-status">已结课</div>
+            <div class="layui-card-body">
+              <div class="course-name">概率论与数理统计</div>
+              <div class="course-result">不合格</div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>  
+  <div class="footer">
+
+  </div>
+  <script>
+      layui.use('element', function(){
+             var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+             
+             //监听导航点击
+             element.on('nav(demo)', function(elem){
+               //console.log(elem)
+               layer.msg(elem.text());
+             });
+           });
+     </script>
+</body>
+</html>
